@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapKitSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="16u-AE-G52">
+                                <rect key="frame" x="16" y="20" width="343" height="343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="16u-AE-G52" secondAttribute="height" multiplier="1:1" id="cvn-Yv-l1G"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPZ-FA-F3E">
+                                <rect key="frame" x="36" y="383" width="303" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uop-79-E6o">
+                                <rect key="frame" x="36" y="423.5" width="303" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="xVS-5K-bWZ">
+                                <rect key="frame" x="175" y="179" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="cBo-9y-upa"/>
+                                    <constraint firstAttribute="width" constant="25" id="m2A-Ml-vfa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uop-79-E6o" firstAttribute="top" secondItem="yPZ-FA-F3E" secondAttribute="bottom" constant="20" id="3Eo-Cw-0CG"/>
+                            <constraint firstItem="yPZ-FA-F3E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3uu-2f-9Sh"/>
+                            <constraint firstItem="yPZ-FA-F3E" firstAttribute="top" secondItem="16u-AE-G52" secondAttribute="bottom" constant="20" id="FUg-5H-ZYW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="16u-AE-G52" secondAttribute="trailing" id="GZt-3M-Ppe"/>
+                            <constraint firstItem="xVS-5K-bWZ" firstAttribute="centerY" secondItem="16u-AE-G52" secondAttribute="centerY" id="OLQ-u3-6P4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yPZ-FA-F3E" secondAttribute="trailing" constant="20" id="SUc-2p-vJy"/>
+                            <constraint firstItem="16u-AE-G52" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TpE-Ya-kXC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uop-79-E6o" secondAttribute="trailing" constant="20" id="cgz-zb-hWi"/>
+                            <constraint firstItem="Uop-79-E6o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="lyP-nv-5iE"/>
+                            <constraint firstItem="xVS-5K-bWZ" firstAttribute="centerX" secondItem="16u-AE-G52" secondAttribute="centerX" id="r1c-q5-gf7"/>
+                            <constraint firstItem="16u-AE-G52" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wtP-9D-qat"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="16u-AE-G52" id="6U9-97-mu5"/>
+                        <outlet property="myLatitudeLabel" destination="yPZ-FA-F3E" id="CBS-hu-u7A"/>
+                        <outlet property="myLongitudeLabel" destination="Uop-79-E6o" id="rEW-sp-34M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location" width="256" height="256"/>
+    </resources>
+</document>
