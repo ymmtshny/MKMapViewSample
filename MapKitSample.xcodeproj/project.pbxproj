@@ -13,7 +13,6 @@
 		C511E9BB1E3E63D80048B620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C511E9BA1E3E63D80048B620 /* Assets.xcassets */; };
 		C511E9BE1E3E63D80048B620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C511E9BC1E3E63D80048B620 /* LaunchScreen.storyboard */; };
 		C511E9C71E3E63E90048B620 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C511E9C61E3E63E90048B620 /* MapKit.framework */; };
-		C511E9C91E3EF3860048B620 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C511E9C81E3EF3850048B620 /* README.md */; };
 		C511E9CB1E3EF3AE0048B620 /* IMG_1077.PNG in Resources */ = {isa = PBXBuildFile; fileRef = C511E9CA1E3EF3AE0048B620 /* IMG_1077.PNG */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +25,7 @@
 		C511E9BD1E3E63D80048B620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C511E9BF1E3E63D80048B620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C511E9C61E3E63E90048B620 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		C511E9C81E3EF3850048B620 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C511E9CA1E3EF3AE0048B620 /* IMG_1077.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_1077.PNG; path = ../IMG_1077.PNG; sourceTree = "<group>"; };
+		C511E9CA1E3EF3AE0048B620 /* IMG_1077.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_1077.PNG; path = ../../IMG_1077.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +43,6 @@
 		C511E9A71E3E63D80048B620 = {
 			isa = PBXGroup;
 			children = (
-				C511E9CA1E3EF3AE0048B620 /* IMG_1077.PNG */,
 				C511E9B21E3E63D80048B620 /* MapKitSample */,
 				C511E9B11E3E63D80048B620 /* Products */,
 				C511E9C51E3E63E90048B620 /* Frameworks */,
@@ -63,7 +60,7 @@
 		C511E9B21E3E63D80048B620 /* MapKitSample */ = {
 			isa = PBXGroup;
 			children = (
-				C511E9C81E3EF3850048B620 /* README.md */,
+				C511E9CA1E3EF3AE0048B620 /* IMG_1077.PNG */,
 				C511E9B31E3E63D80048B620 /* AppDelegate.swift */,
 				C511E9B51E3E63D80048B620 /* ViewController.swift */,
 				C511E9B71E3E63D80048B620 /* Main.storyboard */,
@@ -157,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C511E9B61E3E63D80048B620 /* ViewController.swift in Sources */,
-				C511E9C91E3EF3860048B620 /* README.md in Sources */,
 				C511E9B41E3E63D80048B620 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
